@@ -1,7 +1,7 @@
 {
-  "name": "weather-adapter",
-  "display_name": "Weather",
-  "version": "0.1.1",
+  "name": "weather-adapter2",
+  "display_name": "Weather2",
+  "version": "0.1.11",
   "description": "Current weather conditions",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mozilla-iot/weather-adapter.git"
+    "url": "git+https://github.com/damooooooooooh/weather-adapter.git"
   },
   "keywords": [
     "mozilla",
@@ -20,9 +20,9 @@
   "author": "Mozilla IoT",
   "license": "MPL-2.0",
   "bugs": {
-    "url": "https://github.com/mozilla-iot/weather-adapter/issues"
+    "url": "https://github.com/damooooooooooh/weather-adapter/issues"
   },
-  "homepage": "https://github.com/mozilla-iot/weather-adapter#readme",
+  "homepage": "https://github.com/damooooooooooh/weather-adapter#readme",
   "dependencies": {
     "node-fetch": "^2.3.0"
   },
@@ -36,6 +36,7 @@
     "lib/provider/accuweather.js",
     "lib/provider/darksky.js",
     "lib/provider/openweathermap.js",
+    "lib/provider/metoffice.js",
     "lib/provider/provider.js",
     "lib/weather-adapter.js",
     "lib/weather-device.js",
@@ -106,7 +107,8 @@
           "enum": [
             "openweathermap",
             "darksky",
-            "accuweather"
+            "accuweather",
+            "metoffice"
           ]
         },
         "apiKey": {
